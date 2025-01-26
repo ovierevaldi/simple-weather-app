@@ -101,7 +101,7 @@ export default function Home() {
               <p className="text-3xl md:text-4xl mb-6 text-center">{currentWeatherData.location.country}, {currentWeatherData.location.name}</p>
               <div className="md:min-w-[450px] rounded-md border p-8">
                   <div className="flex flex-col gap-y-6">
-                    <img src={`${currentWeatherData.weather_icons[0]}`} className="mx-auto"/>
+                    <img src={`${currentWeatherData.weather_icons[0]}`} className="mx-auto" alt="Weather Condition Icon"/>
                     <p className="text-2xl md:text-3xl text-center">{currentWeatherData.weather_descriptions[0]}</p>
                     <p className="text-3xl md:text-5xl text-center">{currentWeatherData.temperature}&#176;C</p>
                   </div>

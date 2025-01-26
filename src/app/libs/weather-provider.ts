@@ -3,7 +3,7 @@ import { WeatherDataProps } from "../page";
 
 const WeatherProvider = () => {
 
-    const getWeatherByCity= async (city: String): Promise<WeatherDataProps | string> => {
+    const getWeatherByCity= async (city: string): Promise<WeatherDataProps | string> => {
         const url = `http://api.weatherstack.com/current?access_key=${process.env.NEXT_PUBLIC_WEATHER_KEY}&query=${city}`;
 
         try {
